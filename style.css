@@ -1,0 +1,113 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==================== Container ==================== */
+
+.chat-box-app {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 768px;
+    margin: auto;
+    background-color: aliceblue;
+    height: 100vh;
+}
+
+.chat-box-app .action {
+    cursor: pointer;
+}
+
+/* ==================== Header ==================== */
+
+.chat-box-app > header {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0 0 2px #233B70;
+}
+.chat-box-app > header > .contact-infos {
+    color: #233B70;
+    flex-grow: 1;
+}
+.chat-box-app > header > .contact-infos > .contact-last-connexion {
+    opacity: 0.4;
+}
+.chat-box-app > header > * {
+    padding: 1.6em;
+}
+.chat-box-app > header > .action {
+    font-size: 1.4em;
+    color: #55E7D5;
+}
+.chat-box-app > header > .action:first-child {
+    color: #6273EA;
+}
+
+/* ==================== Chat ==================== */
+
+.chat-box-app > .chat-container {
+    flex-grow: 1;
+    overflow: auto;
+    padding: 1.5em;
+}
+.chat-box-app > .chat-container .chat-bloc  {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 1em;
+    gap: .3em;
+}
+.chat-box-app > .chat-container .chat-bloc.contact {
+    align-items: flex-start;
+}
+.chat-box-app > .chat-container .chat-bloc .chat-comment {
+    display: inline;
+    background-color: #fff;
+    color: #233B70;
+    padding: 1.4em 2em;
+    max-width: 80%;
+    border-radius: 2em;
+
+}
+.chat-box-app > .chat-container .chat-bloc.contact .chat-comment {
+    background-color: #6273EA;
+    color: #fff;
+}
+.chat-box-app > .chat-container .chat-bloc.user .chat-comment:first-child {
+    border-radius: 2em 0 2em 2em;
+}
+.chat-box-app > .chat-container .chat-bloc.contact .chat-comment:first-child {
+    border-radius: 0 2em 2em;
+}
+
+/* ==================== Chat input ==================== */
+
+.chat-box-app > .chat-input {
+    display: flex;
+    align-items: center;
+    padding: 2em;
+    position: relative;
+    background: linear-gradient(0deg, #fff 0%, #fff 80%, transparent 100%);
+}
+.chat-box-app > .chat-input input[type="text"] {
+    border: #E4E4E4 1px solid;
+    border-radius: 5em;
+    background-color: #f8f8f8;
+    width: 100%;
+    padding: 1em 3em 1em 1em;
+}
+.chat-box-app > .chat-input .send-button {
+    position: absolute;
+    right: 2em;
+    color: #6273EA;
+    background: none;
+    border: none;
+    padding: 1em;
+}

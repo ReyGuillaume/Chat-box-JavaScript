@@ -1,0 +1,32 @@
+[
+	{
+		"messages": [
+            "I'm Guillaume Rey",
+            "I'm a JavaScript developper focus on ReactJS",
+            "Who are you ?"
+        ],
+		"id": 1
+	},{
+		"messages": [
+            "Nice to meet you !",
+            "What do you do here ?"
+        ],
+		"id": 2
+	},{
+		"messages": [
+            "Oh ok !",
+            "Personally, I'm coding a chat-box interface...",
+            "It's so cool, I enjoy that !",
+            "If you want to see more of my projects, click on the link here : https://github.com/ReyGuillaume"
+        ],
+		"id": 3
+	},{
+		"messages": [
+            "Oh, you want to continue to talk with me ?...",
+            "But I wasn't programming for that ^^'",
+            "Thank's a lot for your time and your humanity",
+            "Bye ;)"
+        ],
+		"id": 4
+	}
+]
